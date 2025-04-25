@@ -2,6 +2,7 @@
 
 ## Installation
 
+Ouvrez votre terminal et lancez la commande de clonage de git.
 1.  **Cloner le dépôt :**
     ```bash
     git clone https://github.com/AxeRaoRt/Projet_S8.git
