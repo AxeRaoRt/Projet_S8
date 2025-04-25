@@ -13,6 +13,3 @@
     ```bash
     pip install -r requirements.txt
     ```
-
-## Utilisation
-... (Ajouter ici les instructions sur la façon d'exécuter les étapes du projet) ...
