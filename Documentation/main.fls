@@ -1,8 +1,8 @@
-PWD /Users/axel/Desktop/FinalProject/Documentation
+PWD /Users/axel/Projet_S8/Documentation
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/axel/Desktop/FinalProject/Documentation/main.tex
+INPUT /Users/axel/Projet_S8/Documentation/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
