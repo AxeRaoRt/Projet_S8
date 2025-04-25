@@ -1,0 +1,26 @@
+
+% Nouvelle commande pour dessiner un réseau de neurones
+% Argument : une liste de nombres, par exemple {4,5,5,5,3}
+% Chaque nombre représente le nombre de neurones dans la couche correspondante
+\newcommand{\drawNeuralNetwork}[4]{%
+    \def\layers{#1}
+    \def\nodesize{#2}
+    \def\scalex{#3}
+    \def\scaley{#4}
+
+    % Style des neurones
+    \tikzstyle{mynode}=[thick,draw=black,fill=white!20,circle,minimum size=\nodesize]
+
+    \begin{tikzpicture}[x=\scalex,y=\scaley]
+        \foreach \N [count=\lay,remember={\N as \Nprev (initially 0)}] in \layers {
+            \foreach \i [evaluate={\y=\N/2-\i; \x=\lay; \prev=int(\lay-1);}] in {1,...,\N} {
+                \node[mynode] (N\lay-\i) at (\x,\y) {};
+                \ifnum\Nprev>0
+                    \foreach \j in {1,...,\Nprev}{
+                        \draw[thick] (N\prev-\j) -- (N\lay-\i);
+                    }
+                \fi
+            }
+        }
+    \end{tikzpicture}
+}

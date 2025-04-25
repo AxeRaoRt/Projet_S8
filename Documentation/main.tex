@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{setspace}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tkz-graph}
+\usetikzlibrary{arrows, calc}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[super]{cite}
+
+\usepackage{xcolor} % Pour les couleurs
+%\usepackage[margin=0.5cm]{geometry} % Réduction des marges
+\usepackage{pgfgantt}
+\usepackage{adjustbox} 
+
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\usepackage{dirtree}
+
+
+\input{Neural_Network}
+
+
+%%%%%%%%%%%%%%%%%%  stack exhange code pour arbre
+
+\usepackage[edges]{forest}
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
+\newlength\Size
+\setlength\Size{4pt}
+\tikzset{%
+  folder/.pic={%
+    \filldraw [draw=folderborder, top color=folderbg!50, bottom color=folderbg] (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);
+    \filldraw [draw=folderborder, top color=folderbg!50, bottom color=folderbg] (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  },
+  file/.pic={%
+    \filldraw [draw=folderborder, top color=folderbg!5, bottom color=folderbg!10] (-\Size,.4*\Size+5pt) coordinate (a) |- (\Size,-1.2*\Size) coordinate (b) -- ++(0,1.6*\Size) coordinate (c) -- ++(-5pt,5pt) coordinate (d) -- cycle (d) |- (c) ;
+  },
+}
+\forestset{%
+  declare autowrapped toks={pic me}{},
+  pic dir tree/.style={%
+    for tree={%
+      folder,
+      font=\ttfamily,
+      grow'=0,
+    },
+    before typesetting nodes={%
+      for tree={%
+        edge label+/.option={pic me},
+      },
+    },
+  },
+  pic me set/.code n args=2{%
+    \forestset{%
+      #1/.style={%
+        inner xsep=2\Size,
+        pic me={pic {#2}},
+      }
+    }
+  },
+  pic me set={directory}{folder},
+  pic me set={file}{file},
+}
+
+%%%%%%%%%%%%%%%%    
+
+%%%%%%%%%%%%%%%%%   Il faut pas qu'on oublie la conclusion a chaque partie    %%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\input{PageGarde/PageDeGarde}
+
+\newpage
+
+\tableofcontents 
+
+\newpage
+
+\input{Intro/Introduction}
+
+\newpage
+
+\input{Architecture/Architecture}
+
+\newpage
+
+\input{Datasets/dataset}
+
+\newpage
+
+\input{Prerequis/prerequis.tex}
+
+\newpage
+
+\input{GuideUtilisateur/GuideUtilisateur}
+
+\newpage
+
+\input{Overview/Overview}
+
+\newpage
+
+\input{Appendices/Appendices}
+
+
+
+\end{document}

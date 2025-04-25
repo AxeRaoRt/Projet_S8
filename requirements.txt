@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+rdkit
+mendeleev
+basis_set_exchange
+hyperopt
+plotly
+scikit-learn
+e3nn
+hyperopt
+PyYAML
+selfies

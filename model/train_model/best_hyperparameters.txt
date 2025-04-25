@@ -1,0 +1,11 @@
+Best hyperparameters:
+batch_size=4
+dim=200
+hidden_HK=200
+iteration=350
+layer_HK=3
+layer_functional=1
+lr=0.006041
+lr_decay=0.931770
+step_size=18
+Best MAE: 9.34479808807373

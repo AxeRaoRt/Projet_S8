@@ -1,0 +1,93 @@
+\section{Appendices}
+
+
+\subsection{References}
+
+
+\sloppy % Permet de réduire les avertissements liés à la mise en page
+
+\begin{thebibliography}{9}
+
+\bibitem{Sun}
+Jinyu Sun, Dongxu Li, Yue Wang, Ting Xie, Yingping Zou, Hongmei Lu and Zhimin Zhang, \textit{J. Mater. Chem. A}, 2024,  DOI: 10.1039/D4TA03944K
+
+
+\bibitem{Masashi}
+Tsubaki, Masashi and Mizoguchi, Teruyasu, \textit{Quantum Deep Field: Data-Driven Wave Function, Electron Density Generation, and Atomization Energy Prediction and Extrapolation with Machine Learning}, Phys. Rev. Lett. \textbf{125}(20):206401, 2020, doi: 0.1103/PhysRevLett.125.206401 % \href{https://doi.org/10.1103/PhysRevLett.125.206401}{1}.
+
+\end{thebibliography}
+
+
+
+\subsection{Définitions additionnelles ou figures complémentaires}
+
+\textbf{InChI (Identifiant International des Composés Chimiques)}
+
+\begin{description}
+  \item[Définition :] Une représentation textuelle normalisée d'une molécule chimique, offrant une structure plus rigoureuse que SMILES.
+
+  \item[Exemple :]
+  Benzène : \texttt{InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H}
+\end{description} 
+
+\vspace{0.25cm}
+
+\noindent \textbf{Orbitales de type gaussien (GTOs)}
+\begin{description}
+  \item[Définition :] Une Orbitale de Type Gaussien (GTO) est une fonction mathématique utilisée comme fonction de base en chimie quantique pour approximer les orbitales atomiques. Au lieu d'utiliser une décroissance exponentielle pure, les GTOs emploient une fonction gaussienne, ce qui simplifie le calcul des intégrales dans les calculs de structure électronique moléculaire.
+
+  % Formule : \[
+  %   \chi(x) = N x^{l} e^{-\alpha x^{2}}
+  %   \]
+  Formule : \[
+    \phi(r) = R_{l}(r) Y_{lm}(\theta, \phi)
+  \]
+
+  \item[\(\phi(x)\) :] La fonction orbitale unidimensionnelle, où \(x\) est la coordonnée spatiale.
+  \item[\( R_{l}(r) = N r^{l} e^{-\alpha r^{2}} \) :] La partie radiale du GTO, où \(r\) est la distance au noyau.
+  \item[\(N\) :] La constante de normalisation.
+  \item[\(l\) :] Un entier positif ou nul déterminant le type (par exemple, \(l=0\) pour s, \(l=1\) pour p).
+  \item[\(\alpha\) :] Un paramètre positif contrôlant l'étalement (largeur) de la gaussienne.
+  \item[\(e^{-\alpha r^{2}}\) :] La partie gaussienne, assurant une décroissance rapide lorsque \(|r|\) augmente.
+  \item[\(Y_{lm}(\theta, \phi)\) :] Les harmoniques sphériques, qui dépendent des angles \(\theta\) et \(\phi\) et décrivent la partie angulaire de l'orbitale.
+\end{description}
+
+\vspace{0.25cm}
+
+\noindent \textbf{Autoencodeur variationnel : VAE}
+\begin{description}
+  \item[Définition :] Un autoencodeur variationnel est un modèle génératif profond utilisé en apprentissage automatique. Il apprend une représentation latente probabiliste des données d'entrée à l'aide de deux réseaux de neurones :
+  \item Un \textbf{encodeur} qui projette les données d'entrée vers une distribution latente.
+  \item Un \textbf{décodeur} qui échantillonne à partir de cette distribution latente pour générer de nouvelles données similaires à l'ensemble d'entraînement.
+
+  \item Les VAE sont particulièrement utiles pour générer de nouvelles structures (molécules, etc.) et explorer l'espace afin de découvrir des motifs intéressants.
+\end{description}
+
+\vspace{0.25cm}
+
+\noindent \textbf{Réseau de neurones profond : DNN}
+\begin{description}
+  \item[Définition :] Un réseau de neurones profond (DNN) est un réseau de neurones artificiel composé de plusieurs couches de neurones entre l'entrée et la sortie. Contrairement à un réseau simple avec une ou deux couches cachées, un DNN contient un grand nombre de couches cachées qui lui permettent de modéliser des relations très complexes et de détecter des motifs subtils dans les données. Cela le rend très efficace pour de nombreuses tâches, telles que la reconnaissance d'images, la traduction automatique et la prédiction de comportements.
+\end{description}
+
+\vspace{0.25cm}
+
+\noindent \textbf{Quantum Deep Field : QDF}
+\begin{description}
+  \item[Définition :] Le Quantum Deep Field (QDF) est une méthode qui combine la chimie quantique avec des réseaux de neurones profonds pour prédire les propriétés de molécules ou de matériaux. Elle utilise des informations issues de calculs quantiques (telles que les distributions électroniques) et les intègre dans un modèle d'apprentissage profond, permettant des prédictions plus précises et fiables que les approches traditionnelles.
+\end{description}
+
+\noindent \textbf{PCE : Rendement de conversion de puissance}
+\begin{description}
+  \item[Définition :] Le rendement de conversion de puissance (PCE, pour Power Conversion Efficiency) est une mesure de l'efficacité avec laquelle un dispositif (par exemple, une cellule solaire) convertit l'énergie incidente (comme la lumière) en énergie utilisable (comme l'électricité).
+\end{description}
+
+\noindent \textbf{Fonctionnelles}
+\begin{description}
+  \item[Définition :] En chimie quantique, une fonctionnelle est une fonction qui prend une fonction (par exemple, la densité électronique) comme argument et retourne une valeur scalaire. Les fonctionnelles sont essentielles dans la théorie de la fonctionnelle de la densité (DFT) pour approximer l'énergie totale d'un système.
+\end{description}
+
+\noindent \textbf{Base de fonctions (Basis-set)}
+\begin{description}
+  \item[Définition :] Un ensemble de base (basis-set) est un ensemble de fonctions mathématiques utilisées pour décrire les orbitales électroniques dans les calculs de chimie quantique. Le choix de l'ensemble de base influence la précision et le coût des calculs.
+\end{description}
