@@ -116,7 +116,13 @@ En effet, en raison de la forte non-linéarité du réseau de neurones profond (
 Pour remédier à ce problème, une contrainte supplémentaire est imposée sur $\psi(\mathbf{r})$ basée sur le théorème de Hohenberg-Kohn, qui assure que le potentiel externe $V(\mathbf{r})$ est une fonction unique de la densité électronique.
 
 \subsubsection{PCE}
-Le PCE est calculé à partir des orbitales moléculaires. Il est exprimé par un DNN, ce qui permet d'évaluer l'efficacité de conversion d'énergie de la molécule.
+Le PCE est calculé à partir des orbitales moléculaires. Il est exprimé par un DNN, ce qui permet d'évaluer l'efficacité de conversion d'énergie de la molécule. \\
+
+En somme, on a 2 prédictions princiaples effetuées par le modèle :
+\begin{itemize}
+    \item \textbf{Prédiction du potentiel $V(\mathbf{r})$} : La première, qui est une prédiction sur le potentiel,sert de contraintes physiques pour ajuster le modèle de prédiction de PCE.
+    \item \textbf{Prédiction du PCE} : La deuxième prédiction est le PCE de la molécule.
+\end{itemize}
 
 \subsection{Modèle de genération de molécules}
 Ce modèle repose sur une approche par modélisation générative utilisant

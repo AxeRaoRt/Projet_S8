@@ -11,36 +11,36 @@
 \contentsline {subsubsection}{\numberline {2.1.5}PCE}{5}{subsubsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.2}Modèle de genération de molécules}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Architecure globale du modèle}{6}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Datasets}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Overview sur les Datasets}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Datasets de coordonnées 3D}{7}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Prérequis}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Vérification de la présence d'un GPU et installation de CUDA}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Installation de Pytorch}{9}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Guide utilisateur}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Arbre du projet}{10}{subsection.5.1}%
-\contentsline {paragraph}{Data\_preprocess :}{11}{section*.2}%
-\contentsline {paragraph}{Datasets :}{11}{section*.3}%
-\contentsline {paragraph}{Model :}{11}{section*.4}%
-\contentsline {subsection}{\numberline {5.2}Séparation du dataset}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Transformation des SMILES en coordonnées 3D}{11}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Préparation des données pour le modèle}{12}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Entrainement du modèle}{12}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Prédiction du PCE}{14}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Courbe d'apprentissage}{14}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Demo pour le modèle de prédiction}{14}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}VAE}{14}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Conseils d'utilisation}{15}{subsection.5.10}%
-\contentsline {subsubsection}{\numberline {5.10.1}GPU}{15}{subsubsection.5.10.1}%
-\contentsline {subsubsection}{\numberline {5.10.2}Basis set}{15}{subsubsection.5.10.2}%
-\contentsline {section}{\numberline {6}Axes d'améliorations}{16}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Suggestion modèle de prédiction}{16}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}GPU}{16}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Hyperparamètres}{16}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Fonction de pertes du modèle et fontion d'activation}{16}{subsubsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}Modèle de génération}{17}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Traduction SMILES en SELFIES}{17}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Génération de molécules via NO-Operation (NOP)}{17}{subsubsection.6.2.2}%
-\contentsline {section}{\numberline {7}Appendices}{18}{section.7}%
-\contentsline {subsection}{\numberline {7.1}References}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Définitions additionnelles ou figures complémentaires}{18}{subsection.7.2}%
+\contentsline {section}{\numberline {3}Datasets}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview sur les Datasets}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Datasets de coordonnées 3D}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Prérequis}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Vérification de la présence d'un GPU et installation de CUDA}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Installation de Pytorch}{10}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Guide utilisateur}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Arbre du projet}{11}{subsection.5.1}%
+\contentsline {paragraph}{Data\_preprocess :}{12}{section*.2}%
+\contentsline {paragraph}{Datasets :}{12}{section*.3}%
+\contentsline {paragraph}{Model :}{12}{section*.4}%
+\contentsline {subsection}{\numberline {5.2}Séparation du dataset}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Transformation des SMILES en coordonnées 3D}{12}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Préparation des données pour le modèle}{13}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Entrainement du modèle}{13}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Prédiction du PCE}{15}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Courbe d'apprentissage}{15}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Demo pour le modèle de prédiction}{15}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}VAE}{15}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Conseils d'utilisation}{16}{subsection.5.10}%
+\contentsline {subsubsection}{\numberline {5.10.1}GPU}{16}{subsubsection.5.10.1}%
+\contentsline {subsubsection}{\numberline {5.10.2}Basis set}{16}{subsubsection.5.10.2}%
+\contentsline {section}{\numberline {6}Axes d'améliorations}{17}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Suggestion modèle de prédiction}{17}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}GPU}{17}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Hyperparamètres}{17}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Fonction de pertes du modèle et fontion d'activation}{17}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Modèle de génération}{18}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Traduction SMILES en SELFIES}{18}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Génération de molécules via NO-Operation (NOP)}{18}{subsubsection.6.2.2}%
+\contentsline {section}{\numberline {7}Appendices}{19}{section.7}%
+\contentsline {subsection}{\numberline {7.1}References}{19}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Définitions additionnelles ou figures complémentaires}{19}{subsection.7.2}%
